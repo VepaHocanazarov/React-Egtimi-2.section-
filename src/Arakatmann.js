@@ -9,6 +9,13 @@ class Arakatmann extends Component {
   // dizim:PropTypes.array, ------>>>>Eger class component kullanıyorsam static şekilde prop type atama yapabiliyoruz ancak functional ve diger componentlerde static kullanamıyoruz. 
   // name:PropTypes.number
   // }
+
+  static defaultProps =
+  {
+    name: "Hocanazarov"
+  }
+
+
   render() {
 
     const elements = this.props.dizim.map(dizim=>
@@ -34,6 +41,11 @@ class Arakatmann extends Component {
     )
   }
 }
+
+// Arakatmann.defaultProps =
+// {
+//   name:"Hocanazarov"
+// }
 
 Arakatmann.propTypes =
 {
