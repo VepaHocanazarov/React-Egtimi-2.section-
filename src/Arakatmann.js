@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Vepa from "../../can/src/Vepa"
+import Vepa from "./Vepa"
 
 class Arakatmann extends Component {
   render() {
