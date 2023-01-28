@@ -11,6 +11,10 @@ class Arakatmann extends Component {
   // }
   render() {
 
+    const elements = this.props.dizim.map(dizim=>
+     <Vepa key = {dizim.id} başlik={dizim.title}  açiklama = {dizim.description}/> )
+     
+
     return (
       <div>
 
@@ -19,9 +23,11 @@ class Arakatmann extends Component {
         }
 
        {
-          this.props.dizim.map(dizim=>
-           <Vepa key = {dizim.id} başlik={dizim.title}  açiklama = {dizim.description}/>
-           ) 
+          // this.props.dizim.map(dizim=>
+          //  <Vepa key = {dizim.id} başlik={dizim.title}  açiklama = {dizim.description}/>  --> 2.yöntem
+          //  ) 
+
+          elements
        }
         
       </div>
@@ -31,7 +37,7 @@ class Arakatmann extends Component {
 
 Arakatmann.propTypes =
 {
-  dizim: PropTypes.array,  // ----->>> class componentleri dışındaki componentlerde bu tür ptoptypes kullanırız.
+  dizim: PropTypes.array, // ----->>> class componentleri dışındaki componentlerde bu tür ptoptypes kullanırız.
   name: PropTypes.number
 }
 
