@@ -12,7 +12,7 @@ class Arakatmann extends Component {
   render() {
 
     const elements = this.props.dizim.map(dizim=>
-     <Vepa key = {dizim.id} başlik={dizim.title}  açiklama = {dizim.description}/> )
+     <Vepa key = {dizim.id} newsData = {dizim}/> )
      
 
     return (

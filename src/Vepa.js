@@ -3,14 +3,14 @@ import React, { Component } from 'react'
 
 class Vepa extends Component {
   render() {
-    console.log(this.props);
-    const { başlik, açiklama } = this.props;
+    console.log(this.props.newsData);
+    const { title, description } = this.props.newsData;
     return (
       <div>
 
 
-        <h1>{başlik}</h1>
-        <p>{açiklama}</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
 
 
       </div>
