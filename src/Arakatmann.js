@@ -37,8 +37,12 @@ class Arakatmann extends Component {
 
 Arakatmann.propTypes =
 {
-  dizim: PropTypes.array, // ----->>> class componentleri dışındaki componentlerde bu tür ptoptypes kullanırız.
-  name: PropTypes.number
+  dizim: PropTypes.array.isRequired, // ----->>> class componentleri dışındaki componentlerde bu tür ptoptypes kullanırız.
+  name: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+  ]).isRequired
+  
 }
 
 export default Arakatmann;
