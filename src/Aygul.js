@@ -7,7 +7,7 @@ class Aygul extends Component {
     return (
       <div>
 
-      <h2>{ isim}</h2>
+      <h2>{isim}</h2>
       <h2>{soyad}</h2>
         
       </div>

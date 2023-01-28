@@ -9,6 +9,9 @@ import  './Deneme.css';
 class App extends Component {
   render() {
 
+    const name = "Vepa";
+    const lastname = "Hocanazarov"
+
     const dizim = [{
       id:1,
       title: "Hiper",
@@ -30,7 +33,7 @@ class App extends Component {
       <div className="container">
        
 
-        <Aygul/>
+        <Aygul isim = {name} soyad = {lastname} />
         <Arakatmann dizim = {dizim}/>
 
       </div>
