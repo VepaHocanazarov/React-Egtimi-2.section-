@@ -3,6 +3,7 @@ import './App.css';
 import { Component } from 'react';
 import Aygul from './Aygul';
 import Arakatmann from './Arakatmann';
+import  './Deneme.css';
 
 
 class App extends Component {
@@ -24,7 +25,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        Merhaba Dünya
+       
 
         <Aygul/>
         <Arakatmann dizim = {dizim}/>
