@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from "prop-types"
 
 class Aygul extends Component {
   render() {
@@ -13,6 +14,12 @@ class Aygul extends Component {
       </div>
     )
   }
+}
+
+Aygul.propTypes =
+{
+  isim:PropTypes.string,
+  soyad:PropTypes.string
 }
 
 export default Aygul
