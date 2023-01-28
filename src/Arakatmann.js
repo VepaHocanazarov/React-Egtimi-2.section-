@@ -8,7 +8,7 @@ class Arakatmann extends Component {
 
        {
           this.props.dizim.map(dizim=>
-           <Vepa  başlik={dizim.title}  açiklama = {dizim.description}/>
+           <Vepa key = {dizim.id} başlik={dizim.title}  açiklama = {dizim.description}/>
            ) 
        }
         
