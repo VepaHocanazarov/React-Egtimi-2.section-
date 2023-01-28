@@ -1,11 +1,18 @@
 
-h1{
+h1,h2,h3,h4{
     color: blue;
     text-align: left;
 }
 
 p{
-    color: blue;
+    color: chocolate;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+div{
+    color: lightblue;
     text-align: left;
     font-size: 35px;
     font-weight: 600;

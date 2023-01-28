@@ -34,7 +34,7 @@ class App extends Component {
        
 
         <Aygul isim = {name} soyad = {lastname} />
-        <Arakatmann dizim = {dizim}/>
+        <Arakatmann dizim = {dizim}  name = {4}/>
 
       </div>
 
