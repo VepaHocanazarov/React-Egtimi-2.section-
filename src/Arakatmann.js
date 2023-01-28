@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 import Vepa from "./Vepa"
+import PropTypes from "prop-types"
 
 class Arakatmann extends Component {
+
+  static propTypes=
+  {
+  dizim:PropTypes.number
+  }
   render() {
-    
+
     return (
       <div>
 
