@@ -5,22 +5,7 @@ import Aygul from './Aygul';
 import Arakatmann from './Arakatmann';
 import './Deneme.css';
 
-
-class App extends Component {
-
-  addnews() {
-
-    console.log("Ekledim");
-  }
-
-  btnpratik()
-  {
-    console.log("btn pratik tiklandi");
-  }
-
-  render() {
-
-    const name = "Vepa";
+const name = "Vepa";
     const lastname = "Hocanazarov"
 
     const dizim = [{
@@ -39,6 +24,31 @@ class App extends Component {
       description: "React'in Kendisi"
     },
     ]
+
+
+class App extends Component {
+
+  addnews() {
+
+    dizim.push({
+      id:4,
+      title:"Muhteşem",
+      description:"Muhteşem ötesi"
+    });
+
+    console.log(dizim)
+
+    console.log("Ekledim");
+  }
+
+  btnpratik()
+  {
+    console.log("btn pratik tiklandi");
+  }
+
+  render() {
+
+    
 
     return (
       <div className="container">
