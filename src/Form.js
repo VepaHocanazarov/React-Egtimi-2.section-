@@ -6,10 +6,10 @@ import React, { Component } from 'react'
     constructor(props)
     {
         super(props);
-        this.addButton = this.addButton.bind(this);
+        // this.addButton = this.addButton.bind(this); // ==>> Aşagida Arrow function ile addnews'e binding yapdıgımız için buna gerek yok...
     };
 
-    addButton()
+    addButton = () =>
     {
         this.props.addnews();
         console.log("hi");
