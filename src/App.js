@@ -28,7 +28,15 @@ const name = "Vepa";
 
 class App extends Component {
 
+
+  state = {
+    name:"Aygüljik"   // State:Uygulama içinde degeri degişebilen degerleri tutan Javascript objesidir.
+  }
+ 
+
   addnews() {
+
+    console.log("Ekledim");
 
     dizim.push({
       id:4,
@@ -37,8 +45,6 @@ class App extends Component {
     });
 
     console.log(dizim)
-
-    console.log("Ekledim");
   }
 
   btnpratik()
@@ -51,8 +57,10 @@ class App extends Component {
     
 
     return (
+
       <div className="container">
 
+        <h1> {this.state.name} </h1>
 
         <Aygul isim={name} soyad={lastname} btnpratik = {this.btnpratik} />
         <Arakatmann dizim={dizim} addnews={this.addnews} />
