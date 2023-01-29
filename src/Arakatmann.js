@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Vepa from "./Vepa"
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
+import Form from "./Form";
 
 class Arakatmann extends Component {
 
@@ -36,6 +37,8 @@ class Arakatmann extends Component {
 
           elements
        }
+
+       <Form/>
         
       </div>
     )
