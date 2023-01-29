@@ -5,12 +5,13 @@ import React, { Component } from 'react'
 
     addButton()
     {
+        this.props.addnews();
         console.log("hi");
     }
   render() {
     return (
       <div>
-        <button onClick={this.addButton}>Ekle</button>
+        <button onClick={this.addButton.bind(this)}>Ekle</button>
       </div>
     )
   }

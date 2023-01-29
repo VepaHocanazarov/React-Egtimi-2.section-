@@ -3,42 +3,46 @@ import './App.css';
 import { Component } from 'react';
 import Aygul from './Aygul';
 import Arakatmann from './Arakatmann';
-import  './Deneme.css';
+import './Deneme.css';
 
 
 class App extends Component {
-  addnews()
-  {
+
+  addnews() {
+    
     console.log("Ekledim");
+
+
   }
+
   render() {
 
     const name = "Vepa";
     const lastname = "Hocanazarov"
 
     const dizim = [{
-      id:1,
+      id: 1,
       title: "Hiper",
-      description : "React"
+      description: "React"
     },
     {
-      id:2,
+      id: 2,
       title: "Süper",
-      description : "React Egitimi"
+      description: "React Egitimi"
     },
     {
-      id:3,
+      id: 3,
       title: "Hiper Süper",
-      description : "React'in Kendisi"
+      description: "React'in Kendisi"
     },
-  ]
+    ]
 
     return (
       <div className="container">
-       
 
-        <Aygul isim = {name} soyad = {lastname} />
-        <Arakatmann dizim = {dizim} addnews = {this.addnews}/>
+
+        <Aygul isim={name} soyad={lastname} />
+        <Arakatmann dizim={dizim} addnews={this.addnews} />
 
       </div>
 
