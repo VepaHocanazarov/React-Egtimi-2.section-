@@ -2,6 +2,13 @@ import React, { Component } from 'react'
 import PropTypes from "prop-types"
 
 class Aygul extends Component {
+
+  btnclick()
+  {
+    this.props.btnpratik();
+    console.log("btn click yapildi");
+  }
+
   render() {
 
     const {isim,soyad} = this.props
@@ -10,6 +17,8 @@ class Aygul extends Component {
 
       <h2>{isim}</h2>
       <h2>{soyad}</h2>
+
+      <button onClick={this.btnclick.bind(this)}>Ekle 2</button>
         
       </div>
     )

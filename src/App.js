@@ -9,10 +9,13 @@ import './Deneme.css';
 class App extends Component {
 
   addnews() {
-    
+
     console.log("Ekledim");
+  }
 
-
+  btnpratik()
+  {
+    console.log("btn pratik tiklandi");
   }
 
   render() {
@@ -41,7 +44,7 @@ class App extends Component {
       <div className="container">
 
 
-        <Aygul isim={name} soyad={lastname} />
+        <Aygul isim={name} soyad={lastname} btnpratik = {this.btnpratik} />
         <Arakatmann dizim={dizim} addnews={this.addnews} />
 
       </div>
