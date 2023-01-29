@@ -38,7 +38,7 @@ class Arakatmann extends Component {
           elements
        }
 
-       <Form/>
+       <Form addnews = {this.props.addnews}/>
         
       </div>
     )
