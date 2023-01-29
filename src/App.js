@@ -7,6 +7,10 @@ import  './Deneme.css';
 
 
 class App extends Component {
+  addnews()
+  {
+    console.log("Ekledim");
+  }
   render() {
 
     const name = "Vepa";
@@ -34,7 +38,7 @@ class App extends Component {
        
 
         <Aygul isim = {name} soyad = {lastname} />
-        <Arakatmann dizim = {dizim} />
+        <Arakatmann dizim = {dizim} addnews = {this.addnews}/>
 
       </div>
 
