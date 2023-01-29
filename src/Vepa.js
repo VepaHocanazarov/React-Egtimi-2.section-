@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 
 class Vepa extends Component {
 
+  constructor(props) {
+    super();
+    console.log(props);
+  }
   // static propTypes = {
   //   newsData:PropTypes.shape(
   //     {
@@ -30,9 +34,9 @@ class Vepa extends Component {
 
 Vepa.propTypes =
 {
-  newsData:PropTypes.shape ({
-    title:PropTypes.string,
-    description:PropTypes.string
+  newsData: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string
   })
 }
 
