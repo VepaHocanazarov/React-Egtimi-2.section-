@@ -30,7 +30,7 @@ class App extends Component {
 
 
   state = {
-    name:"Aygüljik"   // State:Uygulama içinde degeri degişebilen degerleri tutan Javascript objesidir.
+    name:"Aygül"   // State:Uygulama içinde degeri degişebilen degerleri tutan Javascript objesidir.
   }
  
 
@@ -62,8 +62,10 @@ class App extends Component {
 
         <h1> {this.state.name} </h1>
 
-        <Aygul isim={name} soyad={lastname} btnpratik = {this.btnpratik} />
-        <Arakatmann dizim={dizim} addnews={this.addnews} />
+        <button>Degiştir</button>
+
+        {/* <Aygul isim={name} soyad={lastname} btnpratik = {this.btnpratik} />
+        <Arakatmann dizim={dizim} addnews={this.addnews} /> */}
 
       </div>
 
