@@ -5,6 +5,7 @@ import Aygul from './Aygul';
 import Arakatmann from './Arakatmann';
 import './Deneme.css';
 import Counter from './Counter';
+import Footer from './Footer';
 
 // const name = "Vepa";
 //     const lastname = "Hocanazarov"
@@ -74,6 +75,7 @@ class App extends Component {
       <div className="container">
 
         <Counter/>
+        <Footer/>
 
         {/* <h1> {this.state.name} </h1>
 
