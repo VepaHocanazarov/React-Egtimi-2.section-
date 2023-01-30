@@ -3,23 +3,37 @@ import PropTypes from "prop-types"
 
 class Aygul extends Component {
 
-  btnclick()
-  {
+  state = {
+    name: "Pratik state"
+  }
+
+  btnclick() {
     this.props.btnpratik();
     console.log("btn click yapildi");
   }
 
+  addpratik() {
+    console.log(this.state)
+    this.setState({
+      name: "set State Eklendi"
+    })
+  }
+
   render() {
 
-    const {isim,soyad} = this.props
+    const { isim, soyad } = this.props
     return (
       <div>
 
-      <h2>{isim}</h2>
-      <h2>{soyad}</h2>
-
-      <button onClick={this.btnclick.bind(this)}>Ekle 2</button>
+        <h1>{this.state.name}</h1>
         
+        <h2>{isim}</h2>
+        <h2>{soyad}</h2>
+
+        <button onClick={this.addpratik.bind(this)}>Ekle</button>
+
+        {/* <button onClick={this.btnclick.bind(this)}>Ekle 2</button> */}
+
       </div>
     )
   }
@@ -27,8 +41,8 @@ class Aygul extends Component {
 
 Aygul.propTypes =
 {
-  isim:PropTypes.string,
-  soyad:PropTypes.string
+  isim: PropTypes.string,
+  soyad: PropTypes.string
 }
 
 export default Aygul

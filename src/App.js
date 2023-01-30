@@ -76,8 +76,8 @@ class App extends Component {
 
         <button onClick={this.changeName.bind(this)}>Degiştir</button>
 
-        {/* <Aygul isim={name} soyad={lastname} btnpratik = {this.btnpratik} />
-        <Arakatmann dizim={dizim} addnews={this.addnews} /> */}
+        <Aygul isim={name} soyad={lastname} btnpratik = {this.btnpratik} />
+        {/* <Arakatmann dizim={dizim} addnews={this.addnews} /> */}
 
       </div>
 
