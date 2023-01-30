@@ -4,8 +4,10 @@ import React, { Component } from 'react'
   render() {
     return (
       <div>
+
+       <br /><br /><br /><br /><br /><br /> Canboz  
         
-      </div>
+      </div>  // bu bir StateFull componentdir cünkü ben buraya state ekeleyebiliyorum
     )
   }
 }
